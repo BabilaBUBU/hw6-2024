@@ -37,3 +37,16 @@ document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Current video location: " + video.currentTime);
 });
 
+document.querySelector("#mute").addEventListener("click", function() {
+	if (video.muted) {
+		video.muted = false;
+		document.querySelector("#mute").innerHTML = "Mute";
+		console.log("Video now unmuted");
+	}
+	else {
+		video.muted = true;
+		document.querySelector("#mute").innerHTML = "Unmute";
+		console.log("Video now muted");
+	}
+});
+
