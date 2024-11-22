@@ -55,3 +55,12 @@ document.querySelector("#slider").addEventListener("change", function() {
 	console.log("Volume now: " + video.volumn);
 });
 
+document.querySelector("#vintage").addEventListener("click", function() {
+	video.classList.add("oldSchool");
+	console.log("Video now in vintage style");
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+	video.classList.remove("oldSchool");
+	console.log("Video now in original style");
+});
