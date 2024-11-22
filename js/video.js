@@ -52,10 +52,10 @@ document.querySelector("#mute").addEventListener("click", function() {
 	}
 });
 
-document.querySelector("#slider").addEventListener("change", function() {
-	video.volumn = document.querySelector("#slider").value / 100;
+document.querySelector("#slider").addEventListener("input", function() {
+	video.volume = document.querySelector("#slider").value / 100;
 	document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
-	console.log("Volume now: " + video.volumn);
+	console.log("Volume now: " + video.volume);
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
